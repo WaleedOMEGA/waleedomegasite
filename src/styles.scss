@@ -1,1 +1,152 @@
+// variables
+$grape:#94618e;
+$eggplant:#49274a;
+$sand:#f4decb;
+$shell:#f8eee7;
+$navback:rgba(0, 0, 0, 0.8);
+$navborder:#080808;
+$a:#9d9d9d;
+$white:#fff;
+$semi:#EFEDF0;
+$bevan:Bevan;
+$Pacifico:Pacifico;
+$xsmall-3:"(max-width:361px)";
+$xsmall-2:"(min-width:362px) and (max-width:384px)";
+$xsmall-1:"(min-width:385px) and (max-width:481px)";
+$xsmall:"(max-width:481px)";
+$mobile:"(min-width:482px) and (max-width : 767px)";
+$small:"(max-width:767px)";
+$medium:"(min-width:768px) and (max-width:1223px)";
+$large:"(min-width:1224px) and (max-width:1824px)";
+$slarge:"(min-width:1465px)";
+
+// mixins
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transition-delay($delay...) {
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
+@mixin box-shadow($boxshadow...) {
+  -moz-box-shadow: $boxshadow;
+  -o-box-shadow: $boxshadow;
+  -webkit-box-shadow: $boxshadow;
+  box-shadow: $boxshadow;
+}
+
+@mixin user-select($value...) {
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  -webkit-user-select: $value;
+  user-select: $value;
+}
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Pacifico';
+  src: url('assets/fonts/Pacifico.ttf');
+}
+
+@font-face {
+  font-family: 'Bevan';
+  src: url('assets/fonts/Bevan.ttf');
+}
+/* General Rules */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  @include transition(all .5s ease-in-out);
+  position: relative;
+}
+
+html,
+body {
+  width: 100%;
+  font-weight: 400;
+  min-height: 100%;
+}
+
+body {
+  font-family: $bevan;
+}
+
+h1 {
+  font-family: $Pacifico;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $bevan;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $a;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+::selection {
+  color: $white;
+  background: $eggplant;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  border-bottom: 2px solid $grape;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+@keyframes slideOut {
+  0% {
+    left: -100%;
+    opacity: 0
+  }
+
+  95% {
+    left: 0;
+    opacity: 0.2
+  }
+
+  100% {
+    opacity: 1;
+    left: 0
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1
+  }
+}
