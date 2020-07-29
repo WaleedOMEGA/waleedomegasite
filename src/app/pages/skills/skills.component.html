@@ -1,0 +1,13 @@
+<div class="skills">
+  <div class="container">
+        <h2>Some Of My Skills</h2>
+  <div *ngFor='let skill of skills' class="skill">
+    <h6 class="skill">{{skill.name}}</h6>
+    <div class="progress skill-bar">
+    <div class="progress-bar" role="progressbar" style="background-color:{{skill.color}}">
+
+    </div>
+    </div>
+  </div>
+  </div>
+</div>

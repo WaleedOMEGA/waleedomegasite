@@ -1,0 +1,42 @@
+.skills{
+  margin-top: 25px;
+
+  h2{
+    color:#9d9d9d;
+    text-align: center;
+  }
+  .progress{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 5px;
+    animation: changewidth 1s 1;
+    -webkit-animation: changewidth 1s 1;
+        .progress-bar
+{
+     height:5px;
+}
+
+
+}
+}
+@keyframes changewidth {
+  0% {
+    width: 0;
+  }
+
+  25% {
+    width: 25%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  75% {
+    width: 75%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
