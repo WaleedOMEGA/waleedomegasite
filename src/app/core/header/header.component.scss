@@ -72,8 +72,17 @@ header{
   }
 }
 }
+.collapse:not(.show) {
+  display: block;
+}
 /*small*/
 @media #{$small} {
+  .collapse:not(.show){
+    display: none;
+  }
+  #omega{
+    width:100%;
+  }
   header {
     nav {
       .container {
