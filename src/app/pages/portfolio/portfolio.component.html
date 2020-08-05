@@ -1,0 +1,22 @@
+<div class="portfolio">
+  <div class="container">
+    <h2>Some of My UI Projects</h2>
+    <div class="row">
+      <div class="project col-4" *ngFor='let project of projects'>
+        <h3><a target="_blank" href={{project.link}}>{{project.name}}</a></h3>
+      </div>
+    </div>
+    <h2>My Projects on Codepen & Github</h2>
+    <div class="row">
+      <div class="project col-6" *ngFor='let code of codes'>
+        <h3><a target="_blank" href={{code.link}}>{{code.name}}</a></h3>
+      </div>
+    </div>
+    <h2>My Resume</h2>
+    <div class="row">
+      <div class="project col-12" *ngFor='let resume of resumes'>
+        <h3><a target="_blank" href={{resume.link}}>{{resume.name}}</a></h3>
+      </div>
+    </div>
+  </div>
+</div>

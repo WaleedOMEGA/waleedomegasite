@@ -1,3 +1,4 @@
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
@@ -7,8 +8,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    pathMatch:'full',
-    redirectTo:'about'
+    pathMatch: 'full',
+    redirectTo: 'about'
   },
   {
     path: 'about',
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'skills',
     component: SkillsComponent
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioComponent
   }
 ];
 

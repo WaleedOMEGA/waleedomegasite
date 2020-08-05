@@ -9,15 +9,12 @@
     margin-top: 10px;
     margin-bottom: 10px;
     height: 5px;
-    animation: changewidth 1s 1;
-    -webkit-animation: changewidth 1s 1;
-        .progress-bar
-{
+    animation: changewidth 0.5s 1;
+    -webkit-animation: changewidth 0.5s 1;
+    .progress-bar{
      height:5px;
-}
-
-
-}
+    }
+  }
 }
 @keyframes changewidth {
   0% {
