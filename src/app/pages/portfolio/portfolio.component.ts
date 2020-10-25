@@ -12,11 +12,23 @@ export class PortfolioComponent implements OnInit {
     { name: 'Al-Safa', link: 'https://waleedomega.github.io/alsafa/' },
     { name: 'APG', link: 'https://waleedomega.github.io/apg/' },
     { name: 'Geek', link: 'https://waleedomega.github.io/Geek/' },
-    { name: 'Motamez', link: 'https://waleedomega.github.io/motamez/' }
+    { name: 'Motamez', link: 'https://waleedomega.github.io/motamez/' },
+    { name: 'Sticky Notes', link: 'https://waleedomega.github.io/sticky-notes' },
+    { name: 'Drum Kit', link: 'https://waleedomega.github.io/JavascriptDrumKit/' },
+    { name: 'Flex Panel Image Gallery', link: 'https://waleedomega.github.io/Flex-Panel-Image-Gallery/' },
+    { name: 'AJAX Type Ahead', link: 'https://waleedomega.github.io/Ajax-Type-Ahead/' },
+    { name: 'Fun with Canvas', link: 'https://waleedomega.github.io/fun-with-html5-canvas/' },
+    { name: 'Digital Clock', link: 'https://waleedomega.github.io/Digital-Clock/' },
+    { name: 'Custom Video Player', link: 'https://waleedomega.github.io/Custom-Video-Player/' },
+    { name: 'Analouge Clock', link: 'https://waleedomega.github.io/Analogue-Clock/' },
+    { name: 'Count Down Timer', link: 'https://waleedomega.github.io/CountDown-Timer/' },
+    {name:'Whack-A-mole-Game',link:'https://waleedomega.github.io/Whack-A-mole-Game/'}
+
+    
   ];
   resumes = [
     {
-      name: 'My Resume', link:'https://drive.google.com/file/d/1ApyTuQSvWcrxlWlkKfma5Hsns4vOLceJ/view?usp=sharing'
+      name: 'My Resume', link:'https://drive.google.com/file/d/1LuhOhFU0wGcVCTH62eN17ICDQcpQleM5/view?usp=sharing'
     }
   ]
   codes = [
