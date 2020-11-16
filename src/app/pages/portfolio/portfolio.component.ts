@@ -28,7 +28,7 @@ export class PortfolioComponent implements OnInit {
   ];
   resumes = [
     {
-      name: 'My Resume', link:'https://drive.google.com/file/d/1LuhOhFU0wGcVCTH62eN17ICDQcpQleM5/view?usp=sharing'
+      name: 'My Resume', link:'https://drive.google.com/file/d/1PkiOyvQ-aydIX_9IzwG3JSjb-uUsyjE6/view?usp=sharing'
     }
   ]
   codes = [
